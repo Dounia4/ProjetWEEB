@@ -1,12 +1,15 @@
 <nav>
   <div>
-    <img src="assets/takima-logo.png" routerLink="" />
+    <span routerLink="">Accueil</span>
     <mat-nav-list>
-      @for (link of links; track link) {
-      <a mat-list-item routerLink="{{ link.href }}" routerLinkActive="active">
-        <span>{{ link.name }}</span>
+      <a mat-list-item routerLink="" routerLinkActive="active">
+        <button>Accueil</button>
       </a>
-      }
+    </mat-nav-list>
+    <mat-nav-list>
+      <a href="admin-login.component.html">
+        <button>Connexion Admin</button>
+      </a>
     </mat-nav-list>
   </div>
 </nav>
