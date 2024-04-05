@@ -1,30 +1,40 @@
+create table admin
+(
+    login TEXT not null,
+    password TEXT not null
+);
+
 create table students
 (
-    id SERIAL PRIMARY KEY,
-    first_name TEXT not null,
-    last_name TEXT not null,
-    birthdate date null,
-    major_id int null,
-    image bytea null
+    pseudo TEXT PRIMARY KEY,
+    best_score int DEFAULT '0'
 );
 
-create table majors
+create table questions
 (
     id SERIAL PRIMARY KEY,
-    name TEXT not null,
-    description TEXT not null
+    question TEXT not null,
+    UNIQUE (question)
 );
 
-create table courses
+CREATE TABLE Answer
 (
     id SERIAL PRIMARY KEY,
-    name TEXT not null,
-    hours int not null
+    answer VARCHAR(50),
+    question_id INTEGER NOT NULL,
+    FOREIGN KEY (question_id) REFERENCES Questions(id)
 );
 
-create table student_course
+CREATE TABLE Quiz
 (
-    id SERIAL PRIMARY KEY,
-    student_id int not null,
-    course_id int not null
+    Number_quiz INT PRIMARY KEY
+);
+
+CREATE TABLE Quiz_question
+(
+    question_id SMALLINT,
+    Number_quiz SMALLINT,
+    PRIMARY KEY(question_id, Number_quiz),
+    FOREIGN KEY(question_id) REFERENCES Questions(id),
+    FOREIGN KEY(Number_quiz) REFERENCES Quiz(Number_quiz)
 );
