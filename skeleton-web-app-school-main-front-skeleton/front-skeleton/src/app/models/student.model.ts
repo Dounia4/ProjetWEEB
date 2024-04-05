@@ -1,5 +1,3 @@
-import { Course } from "./course.model"
-import { Major } from "./major.model"
 
 export interface Student {
   id?: bigint
@@ -7,6 +5,4 @@ export interface Student {
   firstName: string
   lastName: string
   birthdate?: Date
-  courses?: Course[]
-  major: Major
 }

@@ -18,7 +18,6 @@
       <td>{{ student.lastName }}</td>
       <td>{{ student.firstName }}</td>
       <td>{{ student.birthdate | date : "dd/MM/yyyy" }}</td>
-      <td>{{ student.major!!.name }}</td>
       <td>
         <button mat-icon-button color="warn" (click)="deleteStudent($event, student)">
           <mat-icon>delete</mat-icon>
