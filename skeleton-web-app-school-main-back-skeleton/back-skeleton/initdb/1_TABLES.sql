@@ -13,29 +13,39 @@ create table player
 create table questions
 (
     id SERIAL PRIMARY KEY,
-    question TEXT not null,
+    question TEXT NOT NULL,
     UNIQUE (question)
 );
 
 CREATE TABLE answer
 (
     id SERIAL PRIMARY KEY,
-    answer VARCHAR(50),
+    name VARCHAR(50) NOT NULL,
     question_id INTEGER NOT NULL,
+    response_value LOGICAL NOT NULL,
     FOREIGN KEY (question_id) REFERENCES Questions(id)
 );
 
+CREATE TABLE question_answer(
+    question_id int,
+    answer_id INT,
+    PRIMARY KEY(question_id, answer_id),
+    FOREIGN KEY(question_id) REFERENCES Questions(id),
+    FOREIGN KEY(answer_id) REFERENCES Answer(id)
+);
+
+
 CREATE TABLE quiz
 (
-    number_quiz INT PRIMARY KEY,
+    id INT PRIMARY KEY,
     image bytea  NOT NULL
 );
 
 CREATE TABLE quiz_question
 (
-    number_quiz SMALLINT,
+    quiz_id SMALLINT,
     question_id SMALLINT,
-    PRIMARY KEY(question_id, number_quiz),
+    PRIMARY KEY(quiz_id,question_id ),
     FOREIGN KEY(question_id) REFERENCES Questions(id),
-    FOREIGN KEY(number_quiz) REFERENCES Quiz(number_quiz)
+    FOREIGN KEY(quiz_id) REFERENCES Quiz(id)
 );
