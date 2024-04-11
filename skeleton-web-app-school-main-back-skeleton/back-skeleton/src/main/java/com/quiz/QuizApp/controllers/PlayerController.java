@@ -1,9 +1,10 @@
 package com.quiz.QuizApp.controllers;
 
-import com.quiz.QuizApp.models.Student;
-import com.quiz.QuizApp.services.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
+
+import com.quiz.QuizApp.models.Player;
+import com.quiz.QuizApp.services.PlayerService;
 
 import java.util.List;
 
@@ -11,11 +12,11 @@ import java.util.List;
 @RequestMapping("students")
 @RestController
 @RequiredArgsConstructor
-public class StudentController {
-    private final StudentService studentService;
+public class PlayerController {
+    private final PlayerService playerService;
     @GetMapping("")
-    public List<Student> listStudents() {
-        return studentService.findAll();
+    public List<Player> listStudents() {
+        return playerService.findAll();
     }
 
 }

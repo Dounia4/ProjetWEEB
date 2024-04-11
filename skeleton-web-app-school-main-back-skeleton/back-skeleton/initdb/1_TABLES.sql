@@ -4,7 +4,7 @@ create table admin
     password TEXT not null
 );
 
-create table students
+create table player
 (
     pseudo TEXT PRIMARY KEY,
     best_score int DEFAULT '0'
@@ -17,7 +17,7 @@ create table questions
     UNIQUE (question)
 );
 
-CREATE TABLE Answer
+CREATE TABLE answer
 (
     id SERIAL PRIMARY KEY,
     answer VARCHAR(50),
@@ -25,16 +25,17 @@ CREATE TABLE Answer
     FOREIGN KEY (question_id) REFERENCES Questions(id)
 );
 
-CREATE TABLE Quiz
+CREATE TABLE quiz
 (
-    Number_quiz INT PRIMARY KEY
+    number_quiz INT PRIMARY KEY,
+    image bytea  NOT NULL
 );
 
-CREATE TABLE Quiz_question
+CREATE TABLE quiz_question
 (
+    number_quiz SMALLINT,
     question_id SMALLINT,
-    Number_quiz SMALLINT,
-    PRIMARY KEY(question_id, Number_quiz),
+    PRIMARY KEY(question_id, number_quiz),
     FOREIGN KEY(question_id) REFERENCES Questions(id),
-    FOREIGN KEY(Number_quiz) REFERENCES Quiz(Number_quiz)
+    FOREIGN KEY(number_quiz) REFERENCES Quiz(number_quiz)
 );

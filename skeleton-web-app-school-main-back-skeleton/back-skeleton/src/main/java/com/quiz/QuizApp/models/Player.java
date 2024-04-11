@@ -7,9 +7,9 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 
 @Entity
-@Table(name = "students")
+@Table(name = "player")
 @Getter
-public class Student {
+public class Player {
     @Id
     @Column(name = "pseudo")
     private String pseudo;
@@ -18,12 +18,12 @@ public class Student {
     private int bestScore;
 
 
-    private Student(Builder builder) {
+    private Player(Builder builder) {
         this.pseudo = builder.pseudo;
         this.bestScore = builder.bestScore;
     }
 
-    public Student() {
+    public Player() {
     }
 
     public static class Builder {
@@ -40,8 +40,8 @@ public class Student {
             this.bestScore = bestScore;
             return this;
         }
-        public Student build() {
-            return new Student(this);
+        public Player build() {
+            return new Player(this);
         }
     }
 }
