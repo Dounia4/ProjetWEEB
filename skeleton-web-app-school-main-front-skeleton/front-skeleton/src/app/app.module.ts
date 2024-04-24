@@ -16,7 +16,9 @@ import { MajorsComponent } from "majors/majors.component"
 import { MajorStudentsComponent } from "majors/major-students/major-students.component"
 import { HttpClientModule } from "@angular/common/http"
 import { AdminComponent } from "admin/admin.component"
-
+import { MathComponent } from 'math/math.component';
+import { HistoireComponent } from 'histoire/histoire.component';
+import { PhysiqueComponent } from 'physique/physique.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +29,9 @@ import { AdminComponent } from "admin/admin.component"
     MajorsComponent,
     MajorStudentsComponent,
     AdminComponent,
+    MathComponent,
+    HistoireComponent,
+    PhysiqueComponent,
   ],
   imports: [
     BrowserModule,
