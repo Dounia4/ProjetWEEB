@@ -18,7 +18,4 @@ public class PlayerService {
         it.forEach(users::add);
         return users ;
     }
-
-
-
 }

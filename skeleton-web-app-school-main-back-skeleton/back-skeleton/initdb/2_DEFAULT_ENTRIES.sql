@@ -1,1 +1,1 @@
-INSERT INTO students (pseudo) VALUES ('hicham');
+INSERT INTO admin (login, password) VALUES ('HIB', 'HIB');

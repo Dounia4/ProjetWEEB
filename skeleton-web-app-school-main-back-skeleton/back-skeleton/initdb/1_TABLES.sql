@@ -1,6 +1,6 @@
 create table admin
 (
-    login TEXT not null,
+    login TEXT PRIMARY KEY,
     password TEXT not null
 );
 
