@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8eb715c-ab93-4422-9d43-81f6a052ba1f" name="Changes" comment="" />
+    <list default="true" id="a0e042dc-9d02-4c68-8394-97ef3135e1e7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skeleton-web-app-school-main-front-skeleton/front-skeleton/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/skeleton-web-app-school-main-front-skeleton/front-skeleton/src/app/app-routing.module.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +16,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2efjzisDxwrzgokkSbHWGKBb4im" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,23 +36,35 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Dounia/Desktop/ProjetWEEB/skeleton-web-app-school-main-back-skeleton",
-    "project.structure.last.edited": "Project",
+    "last_opened_file_path": "C:/Users/Dounia/Desktop/ProjetWEEB/skeleton-web-app-school-main-front-skeleton/front-skeleton/src/app",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dounia\Desktop\ProjetWEEB\skeleton-web-app-school-main-front-skeleton\front-skeleton\src\app" />
+      <recent name="C:\Users\Dounia\Desktop\ProjetWEEB\skeleton-web-app-school-main-front-skeleton\front-skeleton" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b8eb715c-ab93-4422-9d43-81f6a052ba1f" name="Changes" comment="" />
+      <changelist id="a0e042dc-9d02-4c68-8394-97ef3135e1e7" name="Changes" comment="" />
       <created>1712302791097</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712302791097</updated>
     </task>
     <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
